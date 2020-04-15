@@ -1,0 +1,854 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color:#fff;
+  margin-bottom: 15px;
+  background-image: url(http://www.indiediscotheque.com/wp-content/uploads/2014/08/id-background-art.png), linear-gradient(to bottom, #ffffff 0%, #7BD5D5 50%, #FFCC66 100%);
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#scArea{
+  display:none;
+}
+#grab {
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 15px;
+  color: #999;
+}
+#noaudiomsg{
+  text-align:center;
+}
+span#ytsearchSelect {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+span#scsearchSelect {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+div#searchSelects {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.searchSelectsSelected{
+  color: #fff;
+  background-color: #000;
+}
+.grabbed {
+  color: rgb(244, 129, 11) !important;
+}
+
+#topbar {
+  background-color: #000;
+  color: #fff;
+}
+
+select#deletepicker {
+    width: 98%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    white-space: nowrap;
+}
+
+div#pldeleteButton {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  width: 98%;
+}
+
+select#listpicker {
+    width: 245px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    border-bottom: none;
+    height: 24px;
+    white-space: nowrap;
+}
+
+.newChat {
+  padding: 5px 3px 5px 5px;
+}
+
+.nowplayn{
+  background-color:#ccc !important;
+}
+
+.chatName {
+  font-weight: 700;
+}
+
+.newChat:nth-child(even) {
+  background-color: #eee;
+}
+
+#signOut {
+  margin-left: 5px;
+  cursor: pointer;
+  color:#777;
+}
+
+#chatlabel{
+  margin-top:20px;
+  display:block;
+}
+
+.subt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0084B4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#topbar .inr {
+  line-height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#actualChat {
+  border: 1px solid #ccc;
+  height: 535px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top:25px;
+}
+
+.badoop {
+  background-color: #e2f7ff !important;
+}
+
+.chatTime {
+  display: inline-block;
+  float: right;
+  font-weight: 400;
+  font-size: 10px;
+  color: #888;
+}
+
+a {
+  color: #0084B4;
+}
+
+.npmsg {
+  font-size: 12px;
+  text-align:center;
+}
+
+#login h4{
+  font-size:14px;
+  font-weight: 700;
+}
+
+#middleContain{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mainThing{
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.inputline {
+  line-height: 35px;
+}
+
+#addToQueueBttn {
+  font-weight: 700;
+  padding: 5px;
+  color: #999;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#welcomeInfo{
+  padding-bottom:25px;
+  border-bottom:1px dotted #ccc;
+}
+
+#login button {
+  background-color: #eee;
+  color: #000;
+  padding: 2px 10px 2px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.notLoggedIn{
+  width: 100% !important;
+}
+
+#login{
+  margin-top:25px;
+  padding:15px;
+  border: 1px solid #E6DB55;
+  background-color: #FFFFE0;
+}
+
+input {
+  font-size: 14px;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  border: 1px solid #ccc;
+}
+
+#login input{
+  width:95%;
+}
+
+#newchat{
+    width: 348px;
+}
+
+#tagPromptMain .left{
+  float:left;
+}
+
+#tagPromptMain .right{
+  float:right;
+}
+
+.qtxt {
+  display: inline-block;
+  width: 240px;
+}
+
+.delete i {
+    line-height: 30px;
+}
+
+.delete i:hover{
+  color:#999;
+}
+
+#mainThing #rightbox {
+  float: right;
+  width: 350px;
+}
+
+#queuebox .material-icons {
+  font-size: 15px !important;
+  cursor: pointer;
+}
+
+#volplace {
+  float: left;
+}
+
+#info i {
+  font-size: 16px;
+}
+
+#info {
+  font-weight: 700;
+}
+
+#info a {
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#volplace .material-icons {
+  font-size: 16px !important;
+}
+
+#shareinfo {
+  float: right;
+}
+
+i#refreshSong {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.playcount {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  background-color: #999;
+  color: #fff;
+  width: 84.5px;
+  height: 18px;
+  text-align: center;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.delete {
+  float: right;
+}
+
+div#djwithus {
+    background-color: rgba(255,255,255,0.33);
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.spotlight {
+  background-color: #F4810B;
+  color: #fff;
+  border: 1px solid #F4810B !important;
+}
+
+#nowplaying {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top:15px;
+  width: 415px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#timr {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top:15px;
+  float: right;
+  display: inline-block;
+  line-height: 30px;
+}
+
+#deck {
+    margin-top: 15px;
+    height: 99px;
+    font-size:12px;
+    width:455px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom: 2px solid #999;
+}
+
+.djname {
+    text-align: center;
+}
+
+#deck .spot {
+  position: relative;
+    width: 91px;
+    padding: 5px;
+    margin-right: 4px;
+    margin-left:4px;
+    height: 91px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: inline-block;
+}
+
+#mainThing #leftbox {
+  padding-top: 10px;
+  width: 100%;
+}
+
+
+#topbar .inr .left {
+  color: #F4810B;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+span.utitle {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input#qsearch {
+  width: 95%;
+  line-height: 30px;
+  padding: 5px;
+}
+
+input#plmaker {
+  width: 95%;
+  line-height: 30px;
+  padding: 5px;
+}
+
+#rsnCredit{
+  font-size:10px;
+  color:#999;
+  margin-top:5px;
+}
+
+input#tagMachine {
+  line-height: 30px;
+  width: 470px;
+  padding: 5px;
+  margin-bottom:15px;
+}
+
+input#plMachine {
+  line-height: 30px;
+  width: 100%;
+  padding: 5px;
+}
+
+#plmanager p, #plmanager strong{
+  padding: 5px;
+}
+
+#importSources{
+  line-height:30px;
+  border-bottom: 1px solid #ccc;
+  cursor:pointer;
+  font-size:12px;
+}
+
+.importChoice{
+  background-color:#000;
+  color:#fff;
+}
+
+#importSources span{
+  width: 50%;
+  text-align:center;
+  display:inline-block;
+}
+
+div#cancelqsearch {
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#plmanager{
+  display:none;
+}
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1em;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+#volandthings {
+  margin-top: 15px;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+#slider {
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-left:5px;
+}
+#volstatus{
+  cursor: pointer;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+  background-color: rgb(244, 129, 11);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #c5c5c5;
+  background: #f6f6f6;
+  font-weight: normal;
+  color: #454545;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+}
+
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333;
+}
+
+
+/* support: IE8 - See #6727 */
+
+.ui-slider.ui-state-disabled .ui-slider-handle, .ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+
+.ui-slider-horizontal {
+  height: .4em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.4em;
+  margin-left: -.6em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+.importResult .material-icons{
+  font-size:15px;
+  cursor: pointer;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+div.qresult, div.importResult {
+  padding: 5px 3px 5px 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #c5c5c5;
+}
+
+a.importLinkCheck{
+  color:#000;
+}
+
+.imtxt{
+  width: 420px;
+  float:left;
+  margin-top: 5px;
+}
+
+#results{
+  margin-top:10px;
+}
+
+div.qitem {
+  padding: 5px 3px 5px 5px;
+  background-color: #fff;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  border-bottom: 1px solid #eee;
+  cursor: -webkit-grab;
+}
+
+#topbar .inr .right {
+  float: right;
+}
+
+.prson {
+  padding: 5px 3px 5px 5px;
+}
+
+.prson:nth-child(even) {
+  background-color: #eee;
+}
+
+.clear {
+  clear: both;
+}
+
+#niceboxes {
+  margin-top: 30px;
+}
+
+#usersbox {
+  float: left;
+  width: 330px;
+}
+
+#queuebox {
+  float: right;
+  width: 330px;
+}
+
+.chatline:nth-child(even) {
+  background-color: #eee;
+}
+
+.userline:nth-child(even) {
+  background-color: #eee;
+}
+
+.queueline:nth-child(even) {
+  background-color: #eee;
+}
+
+.queueline, .userline {
+  padding: 5px;
+}
+
+#idtitle {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+
+#userslist {
+  height: 330px;
+  margin-top: 5px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+}
+
+.usertab {
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chatline {
+  padding: 5px;
+}
+
+.chatline .from {
+  font-weight: 700;
+}
+
+div#tagPromptOverlay {
+    position: absolute;
+    top: 0;
+    display:none;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+div#tagPromptBox {
+    background-color: #fff;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+#tagPromptClose{
+  cursor: pointer;
+  color: #777;
+}
+
+#tagPromptMain{
+  height: 200px;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  padding: 10px;
+}
+
+div#deletePromptOverlay {
+    position: absolute;
+    top: 0;
+    display:none;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+div#deletePromptBox {
+    background-color: #fff;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+#deletePromptClose{
+  cursor: pointer;
+  color: #777;
+}
+
+#deletePromptMain{
+  height: 200px;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  padding: 10px;
+}
+
+.helptxt {
+    padding: 5px;
+}
+
+div#plimportLauncher {
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+}
+
+div#pldeleteLauncher {
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+div#importPromptOverlay {
+    position: absolute;
+    top: 0;
+    display:none;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+div#importPromptBox {
+    background-color: #fff;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+#importPromptClose{
+  cursor: pointer;
+  color: #777;
+}
+
+#importPromptMain{
+  height: 300px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.ftlogo {
+    color: #F4810B;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+div#tagPromptHeader {
+    background-color: #000;
+    padding: 0 10px 0 10px;
+    line-height: 35px;
+    color: #eee;
+}
+
+#tagPromptHeader .left {
+    float: left;
+}
+
+#tagPromptHeader .right {
+    float: right;
+}
+
+div#deletePromptHeader {
+    background-color: #000;
+    padding: 0 10px 0 10px;
+    line-height: 35px;
+    color: #eee;
+}
+
+#deletePromptHeader .left {
+    float: left;
+}
+
+#deletePromptHeader .right {
+    float: right;
+}
+
+div#importPromptHeader {
+    background-color: #000;
+    padding: 0 10px 0 10px;
+    line-height: 35px;
+    color: #eee;
+}
+
+.avtr {
+    height: 91px;
+    position: absolute;
+    bottom: 0;
+    width: 91px;
+}
+
+#importPromptHeader .left {
+    float: left;
+}
+
+#importPromptHeader .right {
+    float: right;
+}
+
+#usertabs .selected {
+  background-color: #000;
+  color: #fff;
+}
+
+#queuelist {
+  height: 330px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+}
+
+#bottomInfo {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  background-color:#fff;
+  padding-left:2px;
+  padding-right:2px;
+  left: 0;
+  font-size: 10px;
+  color: #999;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -5px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
