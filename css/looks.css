@@ -49,6 +49,11 @@
   to {opacity:0.5;}
 }
 
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 :root {
   --orange: #F4810B;
@@ -222,7 +227,7 @@ code {
   font-size: 0.85rem;
   color: #999;
   text-align: center;
-  background-color: #222;
+  background-color: #0c0012;
   border: 0;
   border-top: 1px solid rgba(255,255,255,0.1);
   border-radius: 0;
@@ -241,7 +246,7 @@ code {
 }
 .tab.on {
   color: #ffffff;
-  background-color: #282828;
+  background-color: #15001f;
   box-shadow: 0 -0.2rem 0.5rem -0.2rem black;
 }
 .tab:not(:first-child) {
@@ -339,7 +344,7 @@ code {
   align-items: center;
   padding: var(--pad1) var(--pad3);
   color: #fff;
-  background-color: black;
+  background-color: #0c0012;
 }
 .ftlogo {
   margin-right: 0.5rem;
@@ -452,10 +457,10 @@ code {
   grid-area: mmopts;
 }
 #minimodeoptions .tab {
-  background-color: #1b1b1b;
+  background-color: #0c0012;
 }
 #minimodeoptions .tab.on {
-  background-color: #222;
+  background-color: #15001f;
 }
 
 
@@ -469,12 +474,12 @@ code {
 }
 #userslist {
   flex: 1;
-  background-color: #282828;
+  background-color: #15001f;
   overflow: hidden;
 }
 #usertabs {
   padding-top: 0.5rem;
-  background-color: #222;
+  background-color: #15001f;
 }
 #allusers,
 #justwaitlist {
@@ -559,6 +564,7 @@ code {
   ;
   margin-bottom: auto;
   padding: var(--pad4);
+  
 }
 #nowplaying::before {
   content: '';
@@ -670,7 +676,8 @@ code {
   font-size: 0.75rem;
   line-height: 1.5rem;
   text-align: center;
-  background-color: #151515;
+  background-color: #24008f;
+  
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -701,7 +708,7 @@ code {
 }
 #volandthings{
   position: relative;
-  background-color: #151515;
+  background-color: #0c0012;
   border-bottom: 1px solid #333;
 }
 #songthings,
@@ -752,7 +759,7 @@ code {
 #stealBox {
   width: 16rem;
   padding: var(--pad3);
-  background-color: #333;
+  background-color: #15001f;
   border-radius: 5px;
 }
 #stealArrow {
@@ -762,14 +769,14 @@ code {
   height: 0;
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
-  border-bottom: 1rem solid #333;
+  border-bottom: 1rem solid #15001f;
 }
 select#stealpicker {
   width: 100%;
   font-size: 1rem;
   border: none;
   font-family: "Open Sans", helvetica, arial, sans-serif;
-  background-color: #222;
+  background-color: #0c0012;
   padding-left: var(--pad1);
   color: #eee;
   white-space: nowrap;
@@ -897,8 +904,7 @@ div#filterMachine {
   display: flex;
   align-items: center;
   padding: var(--pad2) var(--pad2);
-  background-color: #222;
-  border-bottom: 1px solid black;
+  background-color: #0c0012;
   cursor: move;
   /* fallback if grab cursor is unsupported */
   cursor: grab;
@@ -914,12 +920,12 @@ div#filterMachine {
 }
 select#listpicker {
   width: 100%;
-  background-color: #333;
+  background-color: #15001f;
   padding-left: var(--pad2);
 }
 #queueControls,
 #filterMachine {
-  background-color: #222;
+  background-color: #0c0012;
 }
 #qControlButtons {
   display: flex;
@@ -933,7 +939,7 @@ button#cancelqsearch {
   display: none;
   flex-direction: column;
   height: 100%;
-  background-color: #222;
+  background-color: #15001f;
   overflow: hidden;
 }
 #plmanager {
@@ -948,11 +954,11 @@ input#qsearch {
 }
 #queuelist {
   flex: 1;
-  background-color: #181818;
+  background-color: #0c0012;
 }
 #searchResults {
   flex: 1;
-  background-color: #282828;
+  background-color: #15001f;
 }
 #mergeContain {
   display: none;
@@ -973,7 +979,7 @@ input#qsearch {
   border-bottom: 1rem solid #333;
 }
 #mergeBox {
-  background-color:#333;
+  background-color:#15001f;
   padding: 15px;
   border-radius: 5px;
 }
@@ -990,7 +996,7 @@ select#mergepicker, #mergepicker2 {
   font-size: 14px;
   border: none;
   font-family: "Open Sans", helvetica, arial, sans-serif;
-  background-color: #222;
+  background-color: #0c0012;
   padding-left: 5px;
   color: #eee;
   height: 24px;
@@ -1035,7 +1041,7 @@ a.importLinkCheck {
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
-  background-color: #333;
+  background-color: #15001f;
   border-bottom: 1px solid #111;
   overflow: hidden;
 }
@@ -1054,7 +1060,7 @@ a.importLinkCheck {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: #181818;
+  background-color: #0c0012;
 }
 #chatsWrap {
   flex: 1;
@@ -1073,7 +1079,7 @@ a.importLinkCheck {
   margin: var(--pad3);
   color: #ddd;
   word-break: break-word;
-  background-color: #181818;
+  
 }
 .newChat .botson{
   position: relative;
@@ -1101,7 +1107,7 @@ a.importLinkCheck {
   color: #888;
   font-size: 0.75rem;
   text-align: center;
-  background-color: #282828;
+  background-color: #15001f;
   border-radius: var(--pad1);
 }
 .chatContent {
@@ -1168,7 +1174,7 @@ a.importLinkCheck {
   background-color: black;
 }
 .chatText.hideImg .hideImage {
-  background-color: #444;
+  background-color: rgba(255,255,255,0.25);
   transform: rotate(45deg);
 }
 .badoop::before {
@@ -1187,7 +1193,7 @@ a.importLinkCheck {
   font-weight: 700;
   line-height: 3.2;
   color: #777;
-  background-color: #444;
+  background-color: #24008f;
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
 }
@@ -1208,7 +1214,7 @@ a.importLinkCheck {
   display: flex;
   align-items: center;
   padding: var(--pad1);
-  background-color: #282828;
+  background-color: #0c0012;
 }
 #pickerResults {
   overflow-y: scroll;
@@ -1237,7 +1243,7 @@ a.importLinkCheck {
   bottom: 100%;
   width: 100%;
   padding: var(--pad3);
-  background-color: #2d2d2d;
+  background-color: #15001f;
   box-shadow: 0 -0.25rem 0.5rem black;
 }
 #pickerNav {
@@ -1271,7 +1277,7 @@ img.emoji {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #222;
+  background: #15001f;
 }
 #thehistory .pvbar {
   display: flex;
@@ -1308,8 +1314,9 @@ img.emoji {
 #login {
   grid-area: login;
   padding: var(--pad5);
-  background: #151515;
+  background: #0c0012;    
 }
+
 #login h4 {
   font-size: 1.25rem;
   font-weight: 300;
@@ -1362,7 +1369,7 @@ img.emoji {
   background: rgba(0, 0, 0, 0.85);
 }
 #modal {
-  background-color: #222;
+  background-color: #15001f;
   max-width: 90vw;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -1379,7 +1386,7 @@ img.emoji {
   justify-content: space-between;
   padding: var(--pad2) var(--pad3);
   color: #eee;
-  background-color: #333;
+  background-color: #15001f;
 }
 .modalContent {
   flex: 1;
@@ -1500,7 +1507,7 @@ body.blog {
 div#blog {
   flex: 1;
   padding: var(--pad5);
-  background-color:#282828;
+  background-color:#15001f;
 }
 
 
@@ -1634,12 +1641,13 @@ div#blog {
 
   #usertabs {
     padding-top: 0;
-    background-color: black;
+    background-color: #15001f;
   }
 
   #djStage {
     height: 30vh;
     min-height: 15rem;
+    background: linear-gradient(to bottom, #24008f 0%, #0a0a0a 100%);
   }
 
   .avtr {
@@ -1750,7 +1758,7 @@ div#blog {
 
   #usersbox .tab {
     color: #ffffff;
-    background-color: #282828;
+    background-color: #15001f;
     box-shadow: 0 -0.2rem 0.5rem -0.2rem black;
   }
 
